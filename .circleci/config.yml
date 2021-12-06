@@ -15,5 +15,8 @@ jobs:
       - run:
           name: test timeout
           command: |
-            echo "got here boohya"
-            sleep 1m
+            while :
+            do
+              echo "got here boohya"
+              sleep 1m
+            done
