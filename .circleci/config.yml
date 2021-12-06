@@ -9,8 +9,8 @@ jobs:
   test:
     machine:
       image: ubuntu-2004:20211-01
-      resource_class: arm-medium
-      parallelism: 2
-      steps:
-        - checkout:
-            path: project
+    resource_class: arm-medium
+    parallelism: 2
+    steps:
+      - checkout:
+          path: project
