@@ -1,0 +1,16 @@
+version: 2.1
+
+workflows:
+  main:
+    jobs:
+      - test
+
+jobs:
+  test:
+    machine:
+      image: ubuntu-2004:20211-01
+      resource_class: arm-medium
+      parallelism: 2
+      steps:
+        - checkout:
+            path: project
