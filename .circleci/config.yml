@@ -12,5 +12,8 @@ jobs:
     resource_class: arm-medium
     parallelism: 2
     steps:
-      - checkout:
-          path: project
+      - run:
+          name: test timeout
+          command: |
+            echo "got here boohya"
+            sleep 1m
